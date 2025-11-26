@@ -4,7 +4,7 @@ import json
 import io
 from checkContamination import ContaminationChecker
 from display_utils import display_markdown
-from blast_pipeline import run_blast_pipeline
+#from blast_pipeline import run_blast_pipeline
 
 # ---------- CONFIG ----------
 st.set_page_config(
