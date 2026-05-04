@@ -1,0 +1,8 @@
+{"Biofilm-formation": 1,
+ "Human-pathogenicity": 1,
+ "Radiation-resistance": 1,
+ "Spore-formation": 1,
+ "Thermophile": 1,
+ "antimicrobial-resistance": 1}
+
+
