@@ -1,0 +1,15 @@
+[theme]
+base = "light"
+primaryColor = "#2E7D6B"
+backgroundColor = "#FBFBF7"
+secondaryBackgroundColor = "#F1F0EA"
+textColor = "#1F2D2A"
+font = "sans serif"
+
+[server]
+headless = false
+# Cap upload at 10 MB. The current scoring loop is Python-level
+# (O(N_input × N_curated)) and gets sluggish past ~50-100K input rows;
+# 10 MB gives clear headroom for normal use without hitting the perf cliff.
+# Revisit after vectorising _expand_groups in core/checker.py.
+maxUploadSize = 10
