@@ -7,9 +7,12 @@ textColor = "#1F2D2A"
 font = "sans serif"
 
 [server]
-headless = false
 # Cap upload at 10 MB. The current scoring loop is Python-level
 # (O(N_input × N_curated)) and gets sluggish past ~50-100K input rows;
 # 10 MB gives clear headroom for normal use without hitting the perf cliff.
 # Revisit after vectorising _expand_groups in core/checker.py.
 maxUploadSize = 10
+# Don't set `headless` here — Streamlit Cloud needs `headless = true`
+# (which is its default in the container) so the first-run email
+# prompt is suppressed. Setting `headless = false` makes the cloud
+# container hang at the prompt and never bind to port 8501.
