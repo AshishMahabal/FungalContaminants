@@ -9,12 +9,10 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-import upsetplot
 
 from core.checker import (
     filter_fungi,
@@ -28,6 +26,7 @@ from core.viz_prep import (
     build_upset_indicators,
     format_filtered_for_display,
 )
+from core.viz_upset import make_upset_figure
 
 APP_DIR = Path(__file__).parent
 DATA_DIR = APP_DIR / "data"
@@ -426,24 +425,12 @@ else:
                     "Need at least two contributing properties to draw an UpSet plot."
                 )
             else:
-                ind_codes = ind.rename(columns={c: short_code(c) for c in ind.columns})
-                series = upsetplot.from_indicators(
-                    list(ind_codes.columns), data=ind_codes
-                )
-                # show_counts=True crashes on matplotlib >= 3.10 (upsetplot
-                # bug). Bar heights still encode the count visually.
-                upsetplot.UpSet(
-                    series, show_counts=False, sort_by="cardinality"
-                ).plot()
-                fig = plt.gcf()
-                fig.set_size_inches(8, 4)
-                st.pyplot(fig, width="stretch")
-                plt.close(fig)
+                fig = make_upset_figure(ind)
+                st.plotly_chart(fig, width="stretch")
                 st.caption(
-                    "Each row = a property; each column = a combination of "
-                    "properties exhibited by the same species. Top bars = "
-                    "species count for that combination (visualized by bar "
-                    "height)."
+                    "Top bars = species count for each property combination "
+                    "(sorted by combo size). Left bars = total species per "
+                    "property. Hover any bar or dot for member species."
                 )
 
         with st.expander("Reads per property (bar chart)", expanded=False):

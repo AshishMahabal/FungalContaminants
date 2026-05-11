@@ -137,6 +137,51 @@ def build_heatmap_matrix(
     return sub
 
 
+def build_upset_combinations(indicators: pd.DataFrame) -> pd.DataFrame:
+    """Per-combination summary of an UpSet indicator matrix.
+
+    Groups species by the exact set of properties they exhibit. Returns
+    columns ``Properties`` (list[str]), ``Species count`` (int),
+    ``Members`` (list[str]), sorted by ``Species count`` desc, then by
+    number of properties desc as a tiebreak.
+    """
+    columns = ["Properties", "Species count", "Members"]
+    if indicators is None or indicators.empty:
+        return pd.DataFrame(columns=columns)
+    by_combo: dict[tuple[str, ...], list[str]] = {}
+    for species, row in indicators.iterrows():
+        active = tuple(c for c in indicators.columns if bool(row[c]))
+        if not active:
+            continue
+        by_combo.setdefault(active, []).append(species)
+    if not by_combo:
+        return pd.DataFrame(columns=columns)
+    df = pd.DataFrame(
+        [
+            {"Properties": list(combo), "Species count": len(members), "Members": members}
+            for combo, members in by_combo.items()
+        ],
+        columns=columns,
+    )
+    df = df.assign(__nprops=df["Properties"].map(len))
+    df = (
+        df.sort_values(by=["Species count", "__nprops"], ascending=[False, False])
+        .drop(columns="__nprops")
+        .reset_index(drop=True)
+    )
+    return df
+
+
+def build_upset_set_sizes(indicators: pd.DataFrame) -> pd.Series:
+    """Per-property species counts, sorted descending.
+
+    Index = property name, value = number of species exhibiting it.
+    """
+    if indicators is None or indicators.empty:
+        return pd.Series(dtype=int)
+    return indicators.sum(axis=0).astype(int).sort_values(ascending=False)
+
+
 def build_upset_indicators(filtered: pd.DataFrame) -> pd.DataFrame:
     """Boolean species × property indicator matrix for upsetplot.
 

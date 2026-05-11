@@ -15,7 +15,9 @@ from core.viz_prep import (
     build_heatmap_matrix,
     build_property_bar_records,
     build_sunburst_records,
+    build_upset_combinations,
     build_upset_indicators,
+    build_upset_set_sizes,
 )
 
 
@@ -270,3 +272,81 @@ def test_upset_indicators_all_columns_are_bool(curated_df, weights):
     result = filter_fungi(inp, curated_df, weights, score_threshold=1, reads_threshold=10)
     ind = build_upset_indicators(result.filtered)
     assert all(ind.dtypes == bool)
+
+
+# ---------- build_upset_combinations ----------
+
+def test_upset_combinations_empty_returns_empty():
+    df = build_upset_combinations(pd.DataFrame())
+    assert df.empty
+    assert list(df.columns) == ["Properties", "Species count", "Members"]
+
+
+def test_upset_combinations_groups_distinct_property_sets(curated_df, weights):
+    # 3 species with distinct property combos in the fixture.
+    inp = pd.DataFrame(
+        {"#Datasets": ["Candida albicans", "Candida glabrata", "Aspergillus niger"],
+         "loc1": [100, 100, 100]}
+    )
+    result = filter_fungi(inp, curated_df, weights, score_threshold=1, reads_threshold=10)
+    ind = build_upset_indicators(result.filtered)
+    combos = build_upset_combinations(ind)
+    assert len(combos) == 3
+    assert all(combos["Species count"] == 1)
+    for members in combos["Members"]:
+        assert len(members) == 1
+
+
+def test_upset_combinations_collapses_identical_property_sets():
+    # Hand-built indicator matrix: two species with the same combo.
+    ind = pd.DataFrame(
+        {"A": [True, True, False], "B": [True, True, True], "C": [False, False, True]},
+        index=["x", "y", "z"],
+    )
+    combos = build_upset_combinations(ind)
+    # Two combos: {A,B} (x,y) and {B,C} (z).
+    assert len(combos) == 2
+    top = combos.iloc[0]
+    assert top["Species count"] == 2
+    assert set(top["Members"]) == {"x", "y"}
+    assert set(top["Properties"]) == {"A", "B"}
+
+
+def test_upset_combinations_sorted_by_species_count_desc():
+    ind = pd.DataFrame(
+        {"A": [True, True, True, False], "B": [True, True, True, True],
+         "C": [False, False, False, True]},
+        index=["s1", "s2", "s3", "lonely"],
+    )
+    combos = build_upset_combinations(ind)
+    assert list(combos["Species count"]) == [3, 1]
+
+
+def test_upset_combinations_skips_species_with_no_active_props():
+    ind = pd.DataFrame(
+        {"A": [True, False], "B": [False, False]},
+        index=["has_one", "has_none"],
+    )
+    combos = build_upset_combinations(ind)
+    assert len(combos) == 1
+    assert combos.iloc[0]["Members"] == ["has_one"]
+
+
+# ---------- build_upset_set_sizes ----------
+
+def test_upset_set_sizes_empty_returns_empty_series():
+    s = build_upset_set_sizes(pd.DataFrame())
+    assert s.empty
+
+
+def test_upset_set_sizes_counts_active_per_property_sorted_desc():
+    ind = pd.DataFrame(
+        {"A": [True, True, False], "B": [True, False, False],
+         "C": [True, True, True]},
+        index=["x", "y", "z"],
+    )
+    s = build_upset_set_sizes(ind)
+    assert s["A"] == 2
+    assert s["B"] == 1
+    assert s["C"] == 3
+    assert list(s.index) == ["C", "A", "B"]
