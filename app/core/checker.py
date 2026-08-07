@@ -11,6 +11,8 @@ sum ``Σ weight[prop] * value[prop]`` over property columns. Group entries
 
 from __future__ import annotations
 
+import csv
+import re
 from dataclasses import dataclass, field
 from typing import Iterable
 
@@ -66,18 +68,56 @@ def get_property_columns(curated_df: pd.DataFrame) -> list[str]:
     return [c for c in curated_df.columns if c not in META_COLUMNS]
 
 
+def _norm_key(name: object) -> str:
+    """Genus+species matching key: lowercase, non-alphanumeric → space, first
+    two tokens. Bridges ``Candida_auris`` / ``Candida auris`` / ``Candida auris
+    strain X`` to a single ``"candida auris"`` key."""
+    toks = re.sub(r"[^a-z0-9]+", " ", str(name).lower()).split()
+    return " ".join(toks[:2])
+
+
+def load_synonyms(path) -> dict[str, str]:
+    """Load ``{alias_key: canonical_key}`` from a synonyms CSV.
+
+    Expects columns ``alias`` and ``canonical_name``; keys are produced by
+    :func:`_norm_key`, so an alias resolves at the genus+species level. Used to
+    redirect a removed/older name to the organism actually present in the DB.
+    """
+    mapping: dict[str, str] = {}
+    with open(path, newline="") as fh:
+        for row in csv.DictReader(fh):
+            a = _norm_key(row.get("alias", ""))
+            c = _norm_key(row.get("canonical_name", ""))
+            if a and c and a != c:
+                mapping[a] = c
+    return mapping
+
+
 def reconcile_input_names(
-    input_df: pd.DataFrame, curated_df: pd.DataFrame
-) -> tuple[pd.DataFrame, dict[str, str]]:
-    """Best-effort rewrite of input species names to match curated names.
+    input_df: pd.DataFrame,
+    curated_df: pd.DataFrame,
+    synonyms: dict[str, str] | None = None,
+) -> tuple[pd.DataFrame, dict[str, str], list[dict]]:
+    """Rewrite input species names to curated names, resolve synonyms, and merge
+    rows that end up referring to the same organism.
 
-    Strategy: for each input species, take the first two tokens (genus + species)
-    and find a curated species whose first two tokens match case-insensitively.
-    This is stricter than the original "substring in" check, which would match
-    ``Candida`` inside any longer name.
+    Matching is by genus+species (first two tokens, case/punctuation-insensitive).
+    If a name isn't found directly, ``synonyms`` (``{alias_key: canonical_key}``,
+    keys from :func:`_norm_key`) redirects an alias to its canonical species so a
+    removed/older name still matches the entry present in the curated DB.
 
-    Returns the (possibly renamed) input dataframe and a mapping
-    ``{curated_name: original_input_name}`` for display.
+    Returns ``(merged_df, rename_map, report)``:
+
+    - ``merged_df`` — one row per resolved organism.
+    - ``rename_map`` — ``{curated_name: original_input_name}`` for display.
+    - ``report`` — notices about combined input rows, each tagged ``kind``:
+      ``"duplicate"`` (the **same** name appeared more than once → the *larger*
+      read per location is kept) or ``"synonym"`` (**different** names for one
+      organism → their reads are *summed*).
+
+    The read handling reflects intent: a repeated identical name is a duplicate
+    entry (keep the larger), whereas two different names for the same organism are
+    separate detections split across labels (sum them).
     """
     df = input_df.copy()
     species_col = df.columns[0]
@@ -89,27 +129,62 @@ def reconcile_input_names(
     is_numeric = pd.to_numeric(df[species_col], errors="coerce").notna()
     df = df[~is_numeric].copy()
 
-    curated_names = curated_df["Species"].tolist()
-    curated_first2 = {
-        " ".join(name.split()[:2]).lower(): name for name in curated_names
-    }
+    loc_cols = [c for c in df.columns if c != species_col]
+    if not loc_cols:
+        df["sample_loc1"] = 100
+        loc_cols = ["sample_loc1"]
+    df[loc_cols] = df[loc_cols].apply(pd.to_numeric, errors="coerce").fillna(0)
 
+    report: list[dict] = []
+
+    # (A) The SAME name twice is a duplicate row, not a second measurement: keep the
+    #     LARGER read per location and report it. Names compared case/punctuation-
+    #     insensitively, so "Candida_auris" and "Candida auris" count as the same.
+    dedup_key = df[species_col].map(
+        lambda s: re.sub(r"[^a-z0-9]+", " ", str(s).lower()).strip()
+    )
+    for _, g in df.groupby(dedup_key, sort=False):
+        if len(g) > 1:
+            report.append({
+                "kind": "duplicate",
+                "name": str(g[species_col].iloc[0]).strip(),
+                "rows": int(len(g)),
+                "reads_differed": bool((g[loc_cols].nunique() > 1).any()),
+            })
+    grouped = df.groupby(dedup_key, sort=False)
+    df = grouped[loc_cols].max()
+    df[species_col] = grouped[species_col].first()
+    df = df.reset_index(drop=True)[[species_col] + loc_cols]
+
+    # (B) Resolve each (now-unique) name to a curated organism, by genus+species or
+    #     via the synonym map (alias → canonical species).
+    curated_by_key = {_norm_key(name): name for name in curated_df["Species"]}
+    syn = synonyms or {}
     rename_map: dict[str, str] = {}
-    new_names: list[str] = []
+    resolved: list[str] = []
+    originals: list[str] = []
     for raw in df[species_col]:
         text = str(raw).strip()
-        first2 = " ".join(text.split()[:2]).lower()
-        match = curated_first2.get(first2)
-        if match and match != text:
+        key = _norm_key(text)
+        match = curated_by_key.get(key)
+        if match is None and key in syn:  # redirect alias → canonical species
+            match = curated_by_key.get(syn[key])
+        if match is not None and match != text:
             rename_map[match] = text
-            new_names.append(match)
-        else:
-            new_names.append(text)
-    df[species_col] = new_names
+        resolved.append(match if match is not None else text)
+        originals.append(text)
+    df[species_col] = resolved
+    df["__orig__"] = originals
 
-    if len(df.columns) == 1:
-        df["sample_loc1"] = 100
-    return df, rename_map
+    # (C) DIFFERENT names for the same organism (synonyms / variants) are separate
+    #     detections split across labels: SUM their reads, and report it.
+    for name, g in df.groupby(species_col, sort=False):
+        distinct = list(dict.fromkeys(g["__orig__"].tolist()))
+        if len(distinct) > 1:
+            report.append({"kind": "synonym", "organism": name, "inputs": distinct})
+
+    merged = df.groupby(species_col, as_index=False, sort=False)[loc_cols].sum()
+    return merged, rename_map, report
 
 
 def _expand_groups(

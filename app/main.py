@@ -17,6 +17,7 @@ import streamlit as st
 from core.checker import (
     filter_fungi,
     get_property_columns,
+    load_synonyms,
     reconcile_input_names,
 )
 from core.properties import code_legend, short_code
@@ -33,6 +34,7 @@ DATA_DIR = APP_DIR / "data"
 SAMPLES_DIR = DATA_DIR / "samples"
 CURATED_PATH = DATA_DIR / "curated_fungi_both.csv"
 WEIGHTS_PATH = DATA_DIR / "score_weights.txt"
+SYNONYMS_PATH = DATA_DIR / "synonyms.csv"
 CREDITS_PATH = APP_DIR / "CREDITS.md"
 
 SAMPLES: dict[str, Path] = {
@@ -60,9 +62,15 @@ def load_default_weights() -> dict[str, int]:
         return json.load(f)
 
 
+@st.cache_data
+def load_synonym_map() -> dict[str, str]:
+    return load_synonyms(SYNONYMS_PATH)
+
+
 curated_df = load_curated()
 property_cols = get_property_columns(curated_df)
 default_weights = load_default_weights()
+synonym_map = load_synonym_map()
 seed_weights = {p: int(default_weights.get(p, 1)) for p in property_cols}
 
 if "score_weights" not in st.session_state:
@@ -93,7 +101,9 @@ def run_analysis(
     input_df = _read_input_for(choice, uploaded)
     if input_df is None:
         return
-    input_df, rename_map = reconcile_input_names(input_df, curated_df)
+    input_df, rename_map, notices = reconcile_input_names(
+        input_df, curated_df, synonym_map
+    )
     result = filter_fungi(
         input_df,
         curated_df,
@@ -105,6 +115,7 @@ def run_analysis(
     st.session_state["result"] = result
     st.session_state["input_df"] = input_df
     st.session_state["rename_map"] = rename_map
+    st.session_state["row_notices"] = notices
     st.session_state["dataset_label"] = choice
 
 
@@ -294,6 +305,35 @@ else:
     c2.metric("Matched to curated", result.n_matched_to_curated)
     c3.metric("Above threshold", result.n_above_thresholds)
     c4.metric("Unmatched", result.n_unmatched)
+
+    notices = st.session_state.get("row_notices", [])
+    if notices:
+        lines = []
+        for n in notices:
+            if n["kind"] == "synonym":
+                names = ", ".join(f"*{x}*" for x in n["inputs"])
+                lines.append(
+                    f"- **{n['organism']}** — {names} are the same organism; "
+                    "their reads were **summed**."
+                )
+            else:  # duplicate
+                detail = (
+                    "read counts differed — kept the **larger** per location"
+                    if n["reads_differed"]
+                    else "identical rows, kept one"
+                )
+                lines.append(
+                    f"- **{n['name']}** — {n['rows']} rows with the same name "
+                    f"({detail})."
+                )
+        st.info(
+            "🔗 **Combined input rows** (so nothing is counted twice):\n"
+            + "\n".join(lines)
+        )
+        st.caption(
+            "Different names for one organism are summed (see `synonyms.csv`); "
+            "repeated identical names keep the larger read count."
+        )
 
     if result.n_unmatched > 0:
         with st.expander(

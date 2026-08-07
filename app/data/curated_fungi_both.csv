@@ -46,21 +46,20 @@ Ascomycota,Aspergillus violaceofuscus CBS 115571,0,0,0,2,0,1
 Ascomycota,Aspergillus nomiae,1,1,1,2,1,1
 Ascomycota,Aulographum hederae CBS 113979,1,0,0,2,0,0
 Ascomycota,Aureobasidium namibiae CBS 147.97,0,1,0,0,0,0
-Ascomycota,Babjeviella inositovora NRRL Y 12698,1,2,1,0,0,0
+Ascomycota,Babjeviella inositovora NRRL Y-12698,1,2,1,0,0,0
 Zygomycota,Basidiobolus meristosporus CBS 931.73,0,0,0,0,0,1
 Zygomycota,Basidiobolus microsporus NRRL 2992,1,1,1,2,2,1
-Mucoromycota,Benjaminiella poitrasii RSA903  Metagenome Assembled Genome,1,1,1,1,1,1
-Ascomycota,Bimuria novae zelandiae CBS 107.79,0,0,0,0,0,0
+Mucoromycota,Benjaminiella poitrasii RSA903 Metagenome-Assembled Genome,1,1,1,1,1,1
+Ascomycota,Bimuria novae-zelandiae CBS 107.79,0,0,0,0,0,0
 Ascomycota,Bipolaris maydis ATCC 48331,0,1,0,0,0,0
 Ascomycota,Bipolaris oryzae ATCC 44560,0,1,0,2,0,0
 Ascomycota,Blastomyces dermatitidis ATCC 18188,0,1,1,2,0,0
-Ascomycota,Blastomyces dermatitidis ER 3,1,1,1,2,1,1
+Ascomycota,Blastomyces dermatitidis ER-3,1,1,1,2,1,1
 Ascomycota,Issatchenkia orientalis,1,2,1,1,1,1
 Mucoromycota,Calcarisporiella thermophila CBS 279.70,1,1,1,1,1,1
 Ascomycota,Candida albicans SC5314,2,2,2,0,2,1
-Ascomycota,Candida boidinii NRRL Y 2332,1,2,1,1,2,1
+Ascomycota,Candida boidinii NRRL Y-2332,1,2,1,1,2,1
 Ascomycota,Candida parapsilosis CDC317,2,2,1,2,2,1
-Ascomycota,Candida auris,1,2,1,2,2,1
 Ascomycota,Candida railenensis,2,2,1,1,1,1
 Ascomycota,Capronia coronata CBS 617.96,0,1,1,0,0,1
 Ascomycota,Capronia epimyces CBS 606.96,1,1,0,0,0,1
@@ -68,7 +67,7 @@ Ascomycota,Ceratocystis fimbriata CBS 114723,0,0,1,0,0,0
 Ascomycota,Chaetomium olivicolor CBS 102434,1,1,1,2,1,1
 Ascomycota,Chaetomium thermophilum var thermophilum DSM 1495,1,1,1,2,1,1
 Ascomycota,Chaetothyriales sp. CBS 132003,0,1,0,0,0,0
-Ascomycota,Citeromyces matritensis NRRL Y 2407,1,2,1,1,2,1
+Ascomycota,Citeromyces matritensis NRRL Y-2407,1,2,1,1,2,1
 Ascomycota,Cladophialophora bantiana CBS 173.52,0,1,1,0,0,1
 Ascomycota,Cladophialophora carrionii CBS 160.54,0,1,1,2,0,1
 Ascomycota,Cladophialophora psammophila CBS 110553,0,0,1,0,0,1
@@ -82,16 +81,15 @@ Basidiomycota,Cryptococcus curvatus ATCC 20509,1,1,1,1,1,1
 Basidiomycota,Cryptococcus depauperatus CBS 7841,0,0,1,0,0,0
 Basidiomycota,Cryptococcus deuterogattii CBS 10090,0,1,2,0,0,0
 Basidiomycota,Cryptococcus wingfieldii CBS 7118,0,1,1,0,0,0
-Basidiomycota,Cryptococcus laurentii,1,1,1,1,1,1
 Ascomycota,Cucurbitaria berberidis CBS 394.84,0,1,0,2,0,1
-Ascomycota,Cyberlindnera jadinii NRRL Y 1542,1,1,0,0,0,0
+Ascomycota,Cyberlindnera jadinii NRRL Y-1542,1,1,0,0,0,0
 Ascomycota,Cyphellophora europaea CBS 101466,1,1,1,2,0,1
 Ascomycota,Dactylellina haptotyla CBS 200.50,1,1,0,0,1,1
 Ascomycota,Debaryomyces hansenii CBS767,1,2,1,0,1,0
 Ascomycota,Delitschia confertaspora ATCC 74209,0,1,0,0,0,0
 Basidiomycota,Dendrothele bispora CBS 962.96,0,2,1,0,0,1
 Ascomycota,Didymella exigua CBS 183.55,0,1,0,0,0,0
-Basidiomycota,Dioszegia hungarica 24b 2 Genome annotation (Wed Jul 07 08:52:36 UTC 2021),1,1,1,1,1,1
+Basidiomycota,Dioszegia hungarica 24b-2 Genome annotation (Wed Jul 07 08:52:36 UTC 2021),1,1,1,1,1,1
 Ascomycota,Dissoconium aciculare CBS 342.82,1,1,0,0,0,0
 Ascomycota,Dothidotthia symphoricarpi CBS 119687,0,1,1,2,0,0
 Microsporidia,Encephalitozoon hellem ATCC 50504,0,0,0,0,0,1
@@ -99,7 +97,7 @@ Ascomycota,Eremomyces bilateralis CBS 781.70,0,0,0,0,0,0
 Ascomycota,Eremothecium gossypii ATCC 10895,1,1,0,0,2,0
 Basidiomycota,Erythrobasidium hasegawianum ATCC 9536 (P36),1,1,1,1,1,1
 Ascomycota,Exophiala aquamarina CBS 119918,0,1,0,2,0,1
-Basidiomycota,Fellomyces polyborus UCDFST 54 35,1,1,1,1,1,1
+Basidiomycota,Fellomyces polyborus UCDFST 54-35,1,1,1,1,1,1
 Mucoromycota,Fennellomyces linderi CBS 158.54,1,1,1,1,1,1
 Basidiomycota,Fibularhizoctonia sp. CBS 109695,0,1,0,0,0,1
 Basidiomycota,Fistulina hepatica ATCC 64428,0,0,0,0,0,0
@@ -107,7 +105,7 @@ Ascomycota,Fonsecaea multimorphosa CBS 102226,1,1,1,0,0,1
 Ascomycota,Fonsecaea pedrosoi CBS 271.37,0,1,1,2,0,1
 Ascomycota,Fusarium concolor NRRL 13459,1,1,1,2,1,1
 Ascomycota,Fusarium odoratissimum NRRL 54006,0,0,1,0,0,0
-Ascomycota,Fusarium oxysporum NRRL 32931,1,0,1,0,0,0
+Ascomycota,Fusarium oxysporum NRRL 32931,1,0,0,0,0,0
 Ascomycota,Fusarium redolens CORFU0003,1,1,1,2,1,1
 Ascomycota,Fusarium sp. NRRL 52700,0,0,1,0,0,0
 Ascomycota,Fusarium oxysporum,1,1,1,2,1,1
@@ -122,13 +120,12 @@ Ascomycota,Hanseniaspora uvarum DSM 2768,1,1,0,0,0,0
 Ascomycota,Hanseniaspora valbyensis HY1,1,1,1,1,0,1
 Ascomycota,Hapsidospora chrysogenum ATCC 11550,1,1,0,0,0,0
 Ascomycota,Humicola hyalothermophila CBS 45480,1,1,1,2,1,1
-Ascomycota,Hyphopichia burtonii NRRL Y 1933,2,2,1,0,0,0
+Ascomycota,Hyphopichia burtonii NRRL Y-1933,2,2,1,0,0,0
 Ascomycota,Karstenula rhodostoma CBS 690.94,0,1,0,2,0,0
 Ascomycota,Kazachstania africana CBS 2517,1,2,0,0,2,0
 Ascomycota,Kazachstania naganishii CBS 8797,1,1,0,0,2,0
 Ascomycota,Kluyveromyces dobzhanskii CBS 2104,1,2,0,0,2,0
 Ascomycota,Kluyveromyces africanus,1,2,1,1,2,1
-Ascomycota,Kluyveromyces polysporus,1,2,1,1,2,1
 Ascomycota,Komagataella phaffii CBS 7435,1,2,1,0,2,0
 Ascomycota,Kuraishia capsulata CBS 1993,1,2,1,1,2,1
 Basidiomycota,Kwoniella bestiolae CBS 10118,0,1,1,0,0,0
@@ -140,10 +137,9 @@ Ascomycota,Lachancea meyersii CBS 8951,1,1,0,0,2,0
 Ascomycota,Lachancea nothofagi CBS 11611,1,2,0,0,2,0
 Ascomycota,Lentithecium fluviatile CBS 122367,0,1,0,2,0,0
 Ascomycota,Lepidopterella palustris CBS 459.81,1,1,1,2,0,0
-Basidiomycota,Leucosporidium scottii UCDFST 62 1032,1,1,1,1,1,1
 Mucoromycota,Lichtheimia corymbifera JMRC:FSU:9682,1,1,1,1,1,1
-Ascomycota,Lipomyces tetrasporus NRRL Y 8875,1,1,1,2,1,1
-Ascomycota,Lodderomyces elongisporus NRRL YB 4239,2,1,1,0,1,0
+Ascomycota,Lipomyces tetrasporus NRRL Y-8875,1,1,1,2,1,1
+Ascomycota,Lodderomyces elongisporus NRRL YB-4239,2,1,1,0,1,0
 Ascomycota,Lophiostoma macrostomum CBS 122681,0,1,1,2,1,0
 Ascomycota,Magnaporthiopsis poae ATCC 64411,0,0,0,2,0,0
 Basidiomycota,Malassezia globosa CBS 7966,0,1,0,0,0,0
@@ -151,12 +147,11 @@ Basidiomycota,Malassezia restricta CBS 7877,0,1,0,0,0,0
 Basidiomycota,Malassezia sp. CBS 17886,0,1,0,0,0,0
 Basidiomycota,Malassezia sympodialis ATCC 42132,0,1,0,0,0,0
 Ascomycota,Massarina eburnea CBS 473.64,1,1,0,2,0,0
-Ascomycota,Melanomma pulvis pyrius CBS 109.77,1,1,0,2,0,0
-Ascomycota,Metschnikowia bicuspidata var. bicuspidata NRRL YB 4993,1,2,1,0,0,1
+Ascomycota,Melanomma pulvis-pyrius CBS 109.77,1,1,0,2,0,0
+Ascomycota,Metschnikowia bicuspidata var. bicuspidata NRRL YB-4993,1,2,1,0,0,1
 Ascomycota,Metschnikowia gruessii VY0332,1,2,1,1,1,1
-Ascomycota,Metschnikowia pulcherrima NRRL Y 7111,1,2,1,2,2,1
+Ascomycota,Metschnikowia pulcherrima NRRL Y-7111,1,2,1,2,2,1
 Ascomycota,Microsporum canis CBS 113480,1,1,0,2,1,0
-Ascomycota,Millerozyma farinosa CBS 7064,1,2,1,0,2,0
 Ascomycota,Millerozyma farinosa,1,2,1,1,2,1
 Basidiomycota,Moesziomyces aphidis DSM 70725,1,1,1,1,1,1
 Basidiomycota,Mrakia frigida ATCC 22029,1,1,1,1,1,1
@@ -168,59 +163,53 @@ Mucoromycota,Mycotypha africana NRRL 2978,1,1,1,1,1,1
 Ascomycota,Myriangium duriaei CBS 260.36,1,0,0,2,0,0
 Ascomycota,Nadsonia fulvescens var. elongata DSM 6958,1,1,0,0,0,1
 Ascomycota,Nannizzia gypsea CBS 118893,0,1,1,2,1,2
-Ascomycota,Neosartorya fischeri NRRL 181,1,1,1,2,1,1
 Ascomycota,Ogataea boidinii,1,2,1,1,2,1
 Ascomycota,Ogataea philodendri,1,2,1,1,1,1
 Ascomycota,Orbilia oligospora ATCC 24927,1,1,1,0,1,1
-Ascomycota,Pachysolen tannophilus NRRL Y 2460,1,2,1,1,0,1
-Ascomycota,Paecilomyces lilacinus,1,1,1,2,1,2
-Ascomycota,Paraconiothyrium sporulosum AP3s5 JAC2a,1,1,1,2,0,1
+Ascomycota,Pachysolen tannophilus NRRL Y-2460,1,2,1,1,0,1
 Ascomycota,Patellaria atrata CBS 101060,0,0,1,2,0,0
 Basidiomycota,Paxillus involutus ATCC 200175,0,1,0,0,0,0
 Ascomycota,Penicilliopsis zonata CBS 506.65,1,1,0,2,0,1
-Ascomycota,"Penicillium canescens, ATCC 10419",1,1,1,2,0,2
+Ascomycota,Penicillium canescens ATCC 10419,1,1,1,2,0,1
 Ascomycota,Penicillium commune ITEM 5150,1,1,1,2,1,1
 Ascomycota,Penicillium nalgiovense FM193,1,1,1,2,1,1
 Ascomycota,Penicillium capsulatum,1,1,1,2,1,1
 Ascomycota,Penicillium daleae,1,1,1,2,1,1
-Ascomycota,Peterozyma xylosa NRRL Y 12939,1,1,1,1,1,1
+Ascomycota,Peterozyma xylosa NRRL Y-12939,1,1,1,1,1,1
 Ascomycota,Phialemonium thermophilum ATCC 24622,1,1,1,2,1,1
-Mucoromycota,Phycomyces blakesleeanus NRRL 1555( ),0,0,0,0,0,0
+Mucoromycota,Phycomyces blakesleeanus NRRL 1555(-),0,0,0,0,0,0
 Ascomycota,Pichia kudriavzevii CBS573,1,1,1,1,1,1
-Ascomycota,Pichia membranifaciens NRRL Y 2026,1,2,1,1,0,1
+Ascomycota,Pichia membranifaciens NRRL Y-2026,1,2,1,1,0,1
 Ascomycota,Piedraia hortae CBS 480.64,1,0,1,2,0,0
 Ascomycota,Pleomassaria siparia CBS 279.74,0,1,0,2,0,1
 Mucoromycota,Podila verticillata NRRL 6337,0,1,1,0,0,0
 Ascomycota,Polychaeton citri CBS 116435,0,1,0,0,0,0
 Basidiomycota,Pseudozyma aphidis,1,1,1,1,1,1
-Ascomycota,Pyrenochaeta lycopersici MPI SDFR AT 0127 v1.0,1,1,1,2,1,1
+Ascomycota,Pyrenochaeta lycopersici MPI-SDFR-AT-0127 v1.0,1,1,1,2,1,1
 Ascomycota,Pyricularia sp. CBS 133598,0,1,0,0,0,0
 Ascomycota,Pyronema omphalodes CBS 100304,1,0,0,0,1,0
 Ascomycota,Rasamsonia emersonii CBS 393.64,1,1,1,2,0,1
 Ascomycota,Rhinocladiella mackenziei CBS 650.93,0,1,0,0,0,1
 Mucoromycota,Rhizopus microsporus ATCC 52813,0,1,0,0,0,0
-Basidiomycota,Rhodosporidium toruloides,1,1,1,1,1,1
 Ascomycota,Saccharata proteae CBS 121410,0,1,1,2,0,0
 Ascomycota,Saccharomyces cerevisiae S288C,1,1,0,0,2,0
 Ascomycota,Saccharomyces kudriavzevii IFO 1802,1,1,0,0,2,0
 Ascomycota,Saccharomyces mikatae IFO 1815,1,1,0,0,2,0
-Ascomycota,Saccharomyces bayanus,1,1,1,1,2,1
-Ascomycota,Saccharomyces cerevisiae,0,0,0,0,0,0
-Ascomycota,Saccharomyces paradoxus,0,0,0,0,0,0
-Ascomycota,Saccharomyces pastorianus,1,1,1,2,2,1
-Ascomycota,Saitoella complicata NRRL Y 17804,1,0,1,0,0,0
+Ascomycota,Saccharomyces cerevisiae,1,1,1,2,2,1
+Ascomycota,Saccharomyces paradoxus,1,2,1,1,2,1
+Ascomycota,Saitoella complicata NRRL Y-17804,1,0,1,0,0,0
 Ascomycota,Sarocladium strictum UNK,1,1,1,2,1,1
 Ascomycota,Scheffersomyces stipitis CBS 6054,2,1,1,0,0,1
-Ascomycota,Scheffersomyces stipitis NRRL Y 7124T,2,1,1,1,1,1
+Ascomycota,Scheffersomyces stipitis NRRL Y-7124T,2,1,1,1,1,1
 Ascomycota,Schizosaccharomyces japonicus,1,1,1,1,1,1
-Ascomycota,Spathaspora passalidarum NRRL Y 27907,2,2,1,0,0,1
+Ascomycota,Spathaspora passalidarum NRRL Y-27907,2,2,1,0,0,1
 Ascomycota,Sporormia fimetaria CBS 119925,1,0,1,2,0,0
 Ascomycota,Sporothrix schenckii ATCC 58251,1,0,1,2,0,0
-Ascomycota,Suhomyces tanzawaensis NRRL Y 17324,1,2,1,0,0,1
+Ascomycota,Suhomyces tanzawaensis NRRL Y-17324,1,2,1,0,0,1
 Ascomycota,Talaromyces marneffei ATCC 18224,0,0,0,2,0,1
 Ascomycota,Talaromyces emersonii,1,1,1,2,1,1
 Ascomycota,Talaromyces stipitatus,1,1,1,2,1,1
-Ascomycota,Terfezia boudieri ATCC MYA 4762,0,0,0,0,0,1
+Ascomycota,Terfezia boudieri ATCC MYA-4762,0,0,0,0,0,1
 Ascomycota,Tetrapisispora blattae CBS 6284,1,1,0,0,2,0
 Ascomycota,Tetrapisispora phaffii CBS 4417,1,1,0,0,2,0
 Ascomycota,Thermoascus crustaceus CBS 18167,1,1,1,2,1,1
@@ -229,7 +218,7 @@ Ascomycota,Thermothelomyces hinnuleus ATCC 52474,1,1,1,2,1,1
 Ascomycota,Thermothelomyces thermophilus ATCC 42464,0,1,1,0,0,0
 Ascomycota,Thermothielavioides terrestris NRRL 8126,0,0,1,2,0,0
 Basidiomycota,Tilletiopsis washingtonensis MCA 4186 v1.0,1,1,1,1,1,1
-Ascomycota,Tortispora caseinolytica NRRL Y 17796,1,1,0,0,0,1
+Ascomycota,Tortispora caseinolytica NRRL Y-17796,1,1,0,0,0,1
 Ascomycota,Torulaspora sp. CBS 2947,1,2,0,0,2,0
 Ascomycota,Torulaspora delbrueckii,1,2,1,1,2,1
 Basidiomycota,Tremella mesenterica DSM 1558,0,1,1,0,0,0
@@ -242,26 +231,24 @@ Ascomycota,Trichophyton rubrum CBS 100081,0,1,1,2,1,2
 Ascomycota,Trichophyton soudanense CBS 452.61,0,1,1,2,1,2
 Ascomycota,Trichophyton tonsurans CBS 112818,0,1,1,2,1,1
 Ascomycota,Trichosporon asahii var. asahii CBS 2479,0,1,1,0,0,0
-Basidiomycota,Trichosporon oleaginosus IBC0246,1,1,1,1,0,1
 Ascomycota,Vanderwaltozyma polyspora,1,2,1,1,2,1
 Microsporidia,Vittaforma corneae ATCC 50505,0,0,0,0,0,1
 Basidiomycota,Wallemia mellicola CBS 633.66,0,0,1,0,0,0
 Basidiomycota,Wallemia sebi CBS 633.66,1,2,1,1,1,1
-Ascomycota,Wickerhamomyces anomalus NRRL Y 366 8,2,2,1,1,0,1
+Ascomycota,Wickerhamomyces anomalus NRRL Y-366-8,2,2,1,1,0,1
 Ascomycota,Wilcoxina mikolae CBS 423.85,1,0,0,0,0,0
 Ascomycota,Xylaria sp. CBS 124048,0,1,0,0,0,0
-Ascomycota,Yamadazyma tenuis,0,0,0,0,0,0
+Ascomycota,Yamadazyma tenuis,1,2,1,1,0,1
 Ascomycota,Zasmidium cellare ATCC 36951,0,0,1,0,0,0
 Ascomycota,Zopfia rhizophila CBS 207.26,0,1,0,0,0,1
 Ascomycota,Zygosaccharomyces rouxii,1,2,1,1,2,1
-Ascomycota,Candida arabinofermentans NRRL YB 2248,1,2,0,0,0,0
+Ascomycota,Candida arabinofermentans NRRL YB-2248,1,2,0,0,0,0
 Mucoromycota,Absidia glauca,1,1,1,1,1,1
 Basidiomycota,Acaromyces ingoldii,1,1,1,1,0,1
 Glomeromycota,Acaulospora colombiana,1,1,1,1,1,1
 Glomeromycota,Acaulospora morrowiae,1,1,1,2,1,1
 Ascomycota,Achaetomium macrosporum,1,1,1,2,1,1
 Ascomycota,Acidomyces richmondensis,1,1,1,2,1,1
-Ascomycota,Acidomyces sp.,1,1,1,2,1,1
 Ascomycota,Acremonium chrysogenum,1,1,1,2,1,2
 Ascomycota,Acrodontium crateriforme,1,1,1,2,1,1
 Mucoromycota,Actinomortierella ambigua,1,1,1,1,1,1
@@ -276,7 +263,7 @@ Ascomycota,Alectoria fallacina,1,1,1,2,1,1
 Ascomycota,Alectoria sarmentosa,1,1,1,2,1,1
 Blastocladiomycota,Allomyces macrogynus,1,1,1,1,1,1
 Ascomycota,Alternaria alternata,1,1,1,2,1,1
-Ascomycota,Alternaria arborescens,0,0,0,0,0,0
+Ascomycota,Alternaria arborescens,1,1,1,2,1,1
 Ascomycota,Alternaria atra,1,1,1,2,1,1
 Ascomycota,Alternaria burnsii,1,1,1,2,1,1
 Ascomycota,Alternaria gaisen,1,1,1,2,1,1
@@ -307,7 +294,7 @@ Ascomycota,Arachnomyces sp.,1,1,1,2,1,1
 Basidiomycota,Armillaria borealis,1,1,1,1,1,1
 Basidiomycota,Armillaria gallica,1,1,1,1,1,1
 Basidiomycota,Armillaria luteobubalina,1,1,1,1,1,1
-Basidiomycota,Armillaria novae zelandiae,1,1,1,1,1,1
+Basidiomycota,Armillaria novae-zelandiae,1,1,1,1,1,1
 Basidiomycota,Armillaria ostoyae,1,1,1,1,1,1
 Basidiomycota,Armillaria solidipes,1,2,1,1,1,1
 Basidiomycota,Armillaria tabescens,1,1,1,1,1,1
@@ -316,7 +303,6 @@ Ascomycota,Arthrobotrys dactyloides,1,1,1,2,1,1
 Ascomycota,Arthrobotrys flagrans,1,1,1,2,1,1
 Ascomycota,Arthrobotrys musiformis,1,1,1,2,1,1
 Ascomycota,Arthrobotrys oligospora,1,1,1,2,1,1
-Ascomycota,Arthroderma benhamiae,1,1,1,2,2,1
 Ascomycota,Arthroderma gypseum,1,1,1,2,1,2
 Ascomycota,Arthroderma otae,1,1,1,2,1,1
 Ascomycota,Arthroderma sp.,1,1,1,2,1,1
@@ -327,7 +313,7 @@ Ascomycota,Ascochyta lentis,1,1,1,2,1,1
 Ascomycota,Ascochyta rabiei,1,1,1,2,1,1
 Ascomycota,Ascodesmis nigricans,1,1,1,2,1,1
 Ascomycota,Ascosphaera apis,1,1,1,2,1,1
-Ascomycota,Ashbya aceri,1,2,1,2,2,1
+Ascomycota,Ashbya aceri,1,2,1,1,2,1
 Ascomycota,Aspergillus arachidicola,1,1,1,2,1,1
 Ascomycota,Aspergillus avenaceus,1,1,1,2,1,1
 Ascomycota,Aspergillus awamori,1,1,1,2,1,1
@@ -347,7 +333,7 @@ Ascomycota,Aspergillus fumigatiaffinis,1,1,1,2,1,1
 Ascomycota,Aspergillus hiratsukae,1,1,1,2,1,1
 Ascomycota,Aspergillus kawachii,1,1,1,2,1,1
 Ascomycota,Aspergillus lacticoffeatus,1,1,1,2,0,2
-Ascomycota,Aspergillus lentulus,0,0,0,0,0,0
+Ascomycota,Aspergillus lentulus,1,1,1,2,1,1
 Ascomycota,Aspergillus leporis,1,1,1,2,1,1
 Ascomycota,Aspergillus melleus,1,1,1,2,1,1
 Ascomycota,Aspergillus minisclerotigenes,1,1,1,2,2,1
@@ -362,14 +348,14 @@ Ascomycota,Aspergillus parasiticus,1,1,1,2,1,1
 Ascomycota,Aspergillus pseudocaelatus,1,1,1,2,1,1
 Ascomycota,Aspergillus pseudonomiae,1,1,1,2,1,1
 Ascomycota,Aspergillus pseudotamarii,1,1,1,2,1,1
-Ascomycota,Aspergillus pseudoviridinutans,0,0,0,0,0,0
+Ascomycota,Aspergillus pseudoviridinutans,1,1,1,2,1,1
 Ascomycota,Aspergillus puulaauensis,1,1,1,2,1,2
 Ascomycota,Aspergillus rambellii,1,1,1,2,1,2
 Ascomycota,Aspergillus saccharolyticus,1,1,1,2,0,1
 Ascomycota,Aspergillus sclerotialis,1,1,1,2,1,1
 Ascomycota,Aspergillus sergii,1,1,1,2,1,1
 Ascomycota,Aspergillus sp.,1,1,1,2,1,1
-Ascomycota,Aspergillus steynii,1,1,1,2,1,2
+Ascomycota,Aspergillus steynii,1,1,1,2,1,1
 Ascomycota,Aspergillus taichungensis,1,1,1,2,1,1
 Ascomycota,Aspergillus tamarii,1,1,1,2,1,1
 Ascomycota,Aspergillus tanneri,1,1,1,2,1,2
@@ -391,7 +377,7 @@ Ascomycota,Aureobasidium sp.,1,1,1,2,1,1
 Ascomycota,Aureobasidium subglaciale,1,1,1,2,0,1
 Ascomycota,Aureobasidium uvarum,1,1,1,2,1,1
 Ascomycota,Aureobasidium vineae,1,1,1,2,1,1
-Basidiomycota,Auricularia subglabra,1,1,1,0,0,1
+Basidiomycota,Auricularia subglabra,1,1,0,0,0,1
 Basidiomycota,Auriculariales sp.,1,1,1,1,1,1
 Basidiomycota,Auriscalpium vulgare,1,1,1,2,1,1
 Ascomycota,Australozyma saopauloensis,1,2,1,2,2,1
@@ -405,9 +391,7 @@ Ascomycota,Beauveria brongniartii,1,1,1,2,1,1
 Mucoromycota,Benniella sp.,1,1,1,1,1,1
 Mucoromycota,Bifiguratus adelaidae,1,1,1,1,2,1
 Ascomycota,Bionectria ochroleuca,1,1,1,2,1,1
-Ascomycota,Bipolaris sorokiniana,1,1,1,2,1,1
 Ascomycota,Bipolaris victoriae,1,1,1,2,1,1
-Ascomycota,Bipolaris zeicola,1,1,1,2,0,1
 Ascomycota,Blastomyces gilchristii,1,1,1,2,1,1
 Ascomycota,Blastomyces parvus,1,1,1,2,1,1
 Ascomycota,Blastomyces percursus,1,1,2,2,1,1
@@ -424,13 +408,11 @@ Basidiomycota,Bondarzewia mesenterica,1,1,1,1,1,1
 Chytridiomycota,Boothiomyces macroporosus,1,1,1,1,1,1
 Basidiomycota,Botryobasidium botryosum,1,1,1,1,1,1
 Ascomycota,Botryosphaeria dothidea,1,1,1,2,1,1
-Ascomycota,Botryosphaeria parva,1,1,1,2,1,1
 Ascomycota,Botryotinia calthae,1,1,1,2,1,1
 Ascomycota,Botryotinia convoluta,1,1,1,2,1,1
 Ascomycota,Botryotinia fuckeliana,1,1,1,2,1,1
 Ascomycota,Botryotinia narcissicola,1,1,1,2,1,1
 Ascomycota,Botrytis byssoidea,1,1,1,2,1,1
-Ascomycota,Botrytis cinerea,1,1,1,2,1,1
 Ascomycota,Botrytis deweyae,1,1,1,2,1,1
 Ascomycota,Botrytis elliptica,1,1,1,2,1,1
 Ascomycota,Botrytis fragariae,1,1,1,2,1,1
@@ -450,7 +432,7 @@ Basidiomycota,Calocera viscosa,1,1,1,1,1,2
 Ascomycota,Calycina marina,1,1,1,2,1,1
 Ascomycota,Canariomyces notabilis,1,1,1,2,0,1
 Ascomycota,Candida africana,2,2,2,2,1,1
-Ascomycota,Candida dubliniensis,2,2,2,2,1,1
+Ascomycota,Candida dubliniensis,2,2,2,1,1,1
 Ascomycota,Candida glabrata,1,1,1,2,2,1
 Ascomycota,Candida maltosa,2,2,1,2,1,1
 Ascomycota,Candida metapsilosis,2,1,1,1,2,1
@@ -482,7 +464,7 @@ Ascomycota,Cercophora sp.,1,1,1,2,1,1
 Ascomycota,Cercospora berteroae,1,1,1,2,1,1
 Ascomycota,Cercospora beticola,1,1,1,2,1,1
 Ascomycota,Cercospora kikuchii,1,1,1,2,1,1
-Ascomycota,Cercospora zeae maydis,1,1,1,2,0,1
+Ascomycota,Cercospora zeae-maydis,1,1,1,2,0,1
 Basidiomycota,Ceriporiopsis subvermispora,1,1,1,1,1,1
 Basidiomycota,Cerrena zonata,2,2,1,1,1,1
 Glomeromycota,Cetraspora pellucida,1,1,1,1,1,1
@@ -497,7 +479,7 @@ Mucoromycota,Choanephora cucurbitarum,1,1,1,1,1,1
 Ascomycota,Choiromyces venosus,1,2,1,2,0,1
 Chytridiomycota,Chytriomyces confervae,1,1,1,1,1,1
 Mucoromycota,Circinella minor,1,1,1,1,1,1
-Ascomycota,Cirrosporium novae zelandiae,1,1,1,2,1,1
+Ascomycota,Cirrosporium novae-zelandiae,1,1,1,2,1,1
 Ascomycota,Cladonia borealis,1,1,1,2,1,1
 Ascomycota,Cladophialophora chaetospira,1,1,1,2,1,1
 Ascomycota,Cladophialophora immunda,1,1,1,2,1,1
@@ -557,8 +539,8 @@ Ascomycota,Colletotrichum costaricense,1,1,1,2,1,1
 Ascomycota,Colletotrichum cuscutae,1,1,1,2,1,1
 Ascomycota,Colletotrichum destructivum,1,1,1,2,1,1
 Ascomycota,Colletotrichum fioriniae,1,1,1,2,1,1
-Ascomycota,Colletotrichum fructicola,0,0,0,0,0,0
-Ascomycota,Colletotrichum gloeosporioides,0,0,0,0,0,0
+Ascomycota,Colletotrichum fructicola,1,1,1,2,1,1
+Ascomycota,Colletotrichum gloeosporioides,1,1,1,2,1,1
 Ascomycota,Colletotrichum godetiae,1,1,1,2,1,1
 Ascomycota,Colletotrichum graminicola,1,1,1,2,1,1
 Ascomycota,Colletotrichum higginsianum,1,1,1,2,1,1
@@ -597,7 +579,7 @@ Ascomycota,Colletotrichum trifolii,1,1,1,2,1,1
 Ascomycota,Colletotrichum truncatum,1,1,1,2,1,1
 Ascomycota,Colletotrichum zoysiae,1,1,1,2,0,1
 Basidiomycota,Collybia nuda,1,1,1,1,0,1
-Basidiomycota,Collybia sordida,0,0,0,0,0,0
+Basidiomycota,Collybia sordida,1,1,1,1,1,1
 Basidiomycota,Collybiopsis confluens,1,1,1,1,1,1
 Basidiomycota,Collybiopsis luxurians,1,1,1,1,0,1
 Ascomycota,Coniella lustricola,1,1,1,2,1,1
@@ -626,7 +608,7 @@ Basidiomycota,Crucibulum laeve,1,1,1,1,0,1
 Ascomycota,Cryoendolithus antarcticus,1,1,1,2,1,1
 Ascomycota,Cryomyces antarcticus,1,1,1,2,1,1
 Ascomycota,Cryomyces minteri,1,1,1,2,1,1
-Ascomycota,Cryphonectria parasitica,0,0,0,0,0,0
+Ascomycota,Cryphonectria parasitica,1,1,2,2,1,1
 Basidiomycota,Cryptococcus bacillisporus,1,1,2,1,1,1
 Basidiomycota,Cryptococcus floricola,1,1,1,1,1,1
 Basidiomycota,Cryptococcus gattii,1,1,2,1,1,1
@@ -657,7 +639,6 @@ Ascomycota,Daldinia eschscholtzii,1,2,1,2,1,1
 Ascomycota,Daldinia sp.,1,2,1,2,0,1
 Ascomycota,Debaryomyces fabryi,2,2,1,1,1,1
 Ascomycota,Decorospora gaudefroyi,1,1,1,2,0,1
-Ascomycota,Dekkera bruxellensis,1,2,1,1,1,1
 Ascomycota,Dendryphion nanum,1,1,1,2,1,1
 Basidiomycota,Dentipellis fragilis,1,1,1,1,1,1
 Basidiomycota,Dentipellis sp.,1,1,1,1,1,1
@@ -706,7 +687,6 @@ Ascomycota,Emericella nidulans,1,1,1,2,1,2
 Ascomycota,Emericellopsis atlantica,1,1,1,2,1,1
 Ascomycota,Emericellopsis cladophorae,1,1,1,2,1,1
 Ascomycota,Emmonsia crescens,1,1,1,2,1,1
-Ascomycota,Emmonsia sp. CAC 2015a,1,1,1,2,1,1
 Ascomycota,Emmonsiellopsis sp.,1,1,1,2,1,1
 Ascomycota,Emydomyces testavorans,1,1,1,2,1,2
 Microsporidia,Encephalitozoon cuniculi,0,1,1,1,1,1
@@ -745,7 +725,7 @@ Basidiomycota,Favolaschia claudopus,1,1,1,1,1,1
 Basidiomycota,Fibroporia radiculosa,1,1,0,1,1,1
 Basidiomycota,Filobasidium floriforme,1,1,1,1,1,1
 Basidiomycota,Fomitiporia mediterranea,0,1,0,0,0,0
-Basidiomycota,Fomitopsis pinicola,0,0,0,0,0,0
+Basidiomycota,Fomitopsis pinicola,1,2,1,1,0,1
 Basidiomycota,Fomitopsis schrenkii,1,2,1,1,0,1
 Ascomycota,Fonsecaea erecta,1,1,1,2,1,1
 Ascomycota,Fonsecaea monophora,1,1,1,2,1,1
@@ -785,16 +765,16 @@ Ascomycota,Fusarium keratoplasticum,1,1,1,2,0,1
 Ascomycota,Fusarium kuroshium,1,1,1,2,1,1
 Ascomycota,Fusarium langsethiae,1,1,1,2,1,1
 Ascomycota,Fusarium longipes,1,1,1,2,1,1
-Ascomycota,Fusarium mangiferae,0,0,0,0,0,0
+Ascomycota,Fusarium mangiferae,1,1,1,2,1,1
 Ascomycota,Fusarium mexicanum,1,1,1,2,1,1
 Ascomycota,Fusarium mundagurra,1,1,1,2,1,1
-Ascomycota,Fusarium musae,2,1,1,2,1,1
+Ascomycota,Fusarium musae,1,1,1,2,1,1
 Ascomycota,Fusarium napiforme,1,1,1,2,1,1
 Ascomycota,Fusarium oligoseptatum,1,1,1,2,1,1
 Ascomycota,Fusarium phyllophilum,1,1,1,2,1,1
 Ascomycota,Fusarium piperis,1,1,1,2,1,1
 Ascomycota,Fusarium poae,1,1,1,2,1,1
-Ascomycota,Fusarium proliferatum,0,0,0,0,0,0
+Ascomycota,Fusarium proliferatum,1,1,1,2,1,1
 Ascomycota,Fusarium pseudoanthophilum,1,1,1,2,1,1
 Ascomycota,Fusarium pseudocircinatum,1,1,1,2,1,1
 Ascomycota,Fusarium pseudograminearum,1,1,1,2,1,1
@@ -807,18 +787,16 @@ Ascomycota,Fusarium torulosum,1,1,1,2,1,1
 Ascomycota,Fusarium tricinctum,1,1,1,2,1,1
 Ascomycota,Fusarium vanettenii,1,1,1,2,0,1
 Ascomycota,Fusarium venenatum,1,1,1,2,1,1
-Ascomycota,Fusarium verticillioides,2,1,1,2,1,1
 Ascomycota,Fusarium xylarioides,1,1,1,2,1,1
 Ascomycota,Fusarium zealandicum,1,1,1,2,1,1
-Ascomycota,Gaeumannomyces tritici,0,0,0,0,0,0
+Ascomycota,Gaeumannomyces tritici,1,1,1,2,1,1
 Basidiomycota,Ganoderma sinense,1,1,1,1,1,1
 Ascomycota,Geosmithia morbida,1,1,1,2,1,1
-Ascomycota,Geotrichum candidum,1,2,1,2,0,1
-Ascomycota,Geotrichum galactomycetum,1,2,1,2,1,1
+Ascomycota,Geotrichum candidum,1,1,1,2,0,1
+Ascomycota,Geotrichum galactomycetum,1,1,1,2,1,1
 Chytridiomycota,Geranomyces variabilis,1,1,1,1,1,1
-Ascomycota,Gibberella fujikuroi,1,1,1,2,1,1
 Ascomycota,Gibberella intermedia,1,1,1,2,1,1
-Ascomycota,Gibberella moniliformis,2,1,1,2,1,1
+Ascomycota,Gibberella moniliformis,1,1,1,2,1,1
 Ascomycota,Gibberella nygamai,1,1,1,2,1,1
 Ascomycota,Gibberella subglutinans,1,1,1,2,1,1
 Ascomycota,Gibberella zeae,1,1,1,2,1,1
@@ -834,8 +812,8 @@ Ascomycota,Golovinomyces cichoracearum,1,1,1,2,1,1
 Ascomycota,Golovinomyces magnicellulatus,1,1,1,2,2,1
 Ascomycota,Gomphillus americanus,1,1,1,2,1,1
 Chytridiomycota,Gonapodya prolifera,1,1,1,1,1,1
-Basidiomycota,Grifola frondosa,0,0,0,0,0,0
-Ascomycota,Grosmannia clavigera,0,0,0,0,0,0
+Basidiomycota,Grifola frondosa,1,1,1,1,1,1
+Ascomycota,Grosmannia clavigera,1,1,1,2,1,1
 Basidiomycota,Guyanagaster necrorhizus,1,1,1,1,0,1
 Basidiomycota,Gymnopilus dilepis,1,1,1,1,1,1
 Basidiomycota,Gymnopilus junonius,1,1,1,1,1,1
@@ -967,7 +945,7 @@ Ascomycota,Lophium mytilinum,1,1,1,2,1,1
 Mucoromycota,Lunasporangiospora selenospora,1,1,1,1,1,1
 Basidiomycota,Lyophyllum shimeji,1,1,1,1,1,1
 Basidiomycota,Macrolepiota fuliginosa,1,2,1,1,1,1
-Ascomycota,Macrophomina phaseolina,0,0,0,0,0,0
+Ascomycota,Macrophomina phaseolina,1,1,1,2,1,1
 Ascomycota,Macroventuria anomochaeta,1,1,1,2,0,1
 Ascomycota,Madurella mycetomatis,1,1,1,2,1,1
 Ascomycota,Magnaporthe oryzae,1,1,1,2,1,1
@@ -995,13 +973,13 @@ Ascomycota,Maudiozyma exigua,1,2,1,2,2,1
 Ascomycota,Maudiozyma humilis,1,2,1,2,2,1
 Ascomycota,Maudiozyma saulgeensis,1,2,1,2,2,1
 Basidiomycota,Meira miltonrushii,1,1,1,1,0,1
-Basidiomycota,Melampsora larici populina,1,1,1,1,1,1
+Basidiomycota,Melampsora larici-populina,1,1,1,1,1,1
 Basidiomycota,Melanopsichium pennsylvanicum,1,1,1,1,1,1
 Ascomycota,Meristemomyces frigidus,1,1,1,2,1,1
 Ascomycota,Metarhizium acridum,1,1,1,2,1,1
 Ascomycota,Metarhizium album,1,1,1,2,1,1
 Ascomycota,Metarhizium anisopliae,1,1,1,2,1,1
-Ascomycota,Metarhizium brunneum,0,0,0,0,0,0
+Ascomycota,Metarhizium brunneum,1,1,1,2,1,1
 Ascomycota,Metarhizium guizhouense,1,1,1,2,1,1
 Ascomycota,Metarhizium humberi,1,1,1,2,1,1
 Ascomycota,Metarhizium majus,1,1,1,2,1,1
@@ -1013,9 +991,9 @@ Ascomycota,Meyerozyma guilliermondii,2,2,1,2,2,1
 Ascomycota,Meyerozyma sp.,2,2,1,2,2,1
 Basidiomycota,Microbotryomycetes sp.,1,1,1,1,1,1
 Basidiomycota,Microbotryum intermedium,1,1,1,1,1,1
-Basidiomycota,Microbotryum lychnidis dioicae,1,1,1,1,1,1
+Basidiomycota,Microbotryum lychnidis-dioicae,1,1,1,1,1,1
 Basidiomycota,Microbotryum saponariae,1,1,1,1,1,1
-Basidiomycota,Microbotryum silenes dioicae,1,1,1,1,1,1
+Basidiomycota,Microbotryum silenes-dioicae,1,1,1,1,1,1
 Ascomycota,Microdochium bolleyi,1,1,1,2,0,1
 Ascomycota,Microdochium trichocladiopsis,1,1,1,2,1,1
 Ascomycota,Microthyrium microscopicum,1,1,1,2,0,1
@@ -1023,14 +1001,14 @@ Microsporidia,Mitosporidium daphniae,1,1,0,1,1,0
 Basidiomycota,Mixia osmundae,1,1,1,1,1,1
 Mucoromycota,Modicella reniformis,1,1,1,2,1,1
 Ascomycota,Moelleriella libera,1,2,1,2,1,1
-Basidiomycota,Moesziomyces antarcticus,1,1,1,1,2,1
+Basidiomycota,Moesziomyces antarcticus,1,1,1,1,1,1
 Ascomycota,Mollisia scopiformis,2,1,1,2,0,1
 Ascomycota,Mollisiaceae sp.,1,1,1,2,1,1
 Ascomycota,Monascus purpureus,1,1,1,2,1,1
 Ascomycota,Monilinia fructicola,1,2,1,2,1,1
 Ascomycota,Monilinia fructigena,1,1,1,2,1,1
 Ascomycota,Monilinia laxa,1,1,1,2,2,1
-Ascomycota,Monilinia vaccinii corymbosi,1,1,1,2,1,1
+Ascomycota,Monilinia vaccinii-corymbosi,1,1,1,2,1,1
 Basidiomycota,Moniliophthora perniciosa,1,1,1,1,1,1
 Basidiomycota,Moniliophthora roreri,1,1,1,1,1,1
 Ascomycota,Monosporascus cannonballus,1,1,1,2,1,1
@@ -1066,7 +1044,6 @@ Basidiomycota,Mycena sp.,1,1,1,1,1,1
 Basidiomycota,Mycena venus,1,1,1,1,1,1
 Mucoromycota,Mycoemilia scoparia,1,1,1,1,1,1
 Basidiomycota,Mycosarcoma maydis,1,1,1,1,1,1
-Ascomycota,Mycosphaerella eumusae,1,1,1,2,1,1
 Ascomycota,Myotisia sp.,1,1,1,2,1,1
 Ascomycota,Mytilinidion resinicola,1,1,1,2,1,1
 Basidiomycota,Naematelia encephala,1,1,1,1,1,1
@@ -1092,20 +1069,18 @@ Ascomycota,Neolecta irregularis,1,1,1,1,1,1
 Basidiomycota,Neolentinus lepideus,1,1,1,1,0,1
 Ascomycota,Neonectria ditissima,1,1,1,2,1,1
 Ascomycota,Neophaeococcomyces mojaviensis,1,1,1,2,1,1
-Ascomycota,Neurospora crassa,0,0,0,0,0,0
+Ascomycota,Neurospora crassa,1,1,1,2,1,1
 Ascomycota,Neurospora hispaniola,1,1,1,2,1,1
 Ascomycota,Neurospora sp.,1,1,1,0,1,1
 Ascomycota,Neurospora tetrasperma,1,1,1,2,1,1
 Ascomycota,Neurospora tetraspora,1,1,1,2,1,1
 Ascomycota,Niveomyces insectorum,1,1,1,2,1,1
-Microsporidia,Nosema apis,0,1,0,1,1,1
 Microsporidia,Nosema bombycis,0,1,0,1,1,1
-Microsporidia,Nosema ceranae,0,1,0,1,1,1
 Microsporidia,Nosema granulosis,0,1,0,1,1,1
 Basidiomycota,Obba rivulosa,1,1,1,1,1,1
 Ascomycota,Ogataea haglerorum,1,2,1,1,1,1
-Ascomycota,Ogataea parapolymorpha,1,2,1,1,2,1
-Ascomycota,Ogataea polymorpha,1,2,1,1,2,1
+Ascomycota,Ogataea parapolymorpha,1,2,1,1,1,1
+Ascomycota,Ogataea polymorpha,1,2,1,1,1,1
 Ascomycota,Oidiodendron maius,1,1,1,2,0,1
 Ascomycota,Oleoguttula mirabilis,1,1,1,2,1,1
 Ascomycota,Oleoguttula sp.,1,1,1,2,1,1
@@ -1113,11 +1088,11 @@ Chytridiomycota,Olpidium bornovanus,1,1,1,1,1,1
 Ascomycota,Onygenales sp.,1,1,1,2,1,1
 Ascomycota,Ophiobolus disseminans,1,1,1,2,0,1
 Ascomycota,Ophiocordyceps australis,1,1,1,2,1,1
-Ascomycota,Ophiocordyceps camponoti floridani,1,1,1,2,1,1
-Ascomycota,Ophiocordyceps camponoti leonardi,1,2,1,2,1,1
-Ascomycota,Ophiocordyceps camponoti rufipedis,1,1,1,2,1,1
-Ascomycota,Ophiocordyceps camponoti saundersi,1,1,1,2,1,1
-Ascomycota,Ophiocordyceps polyrhachis furcata,1,1,1,2,1,1
+Ascomycota,Ophiocordyceps camponoti-floridani,1,1,1,2,1,1
+Ascomycota,Ophiocordyceps camponoti-leonardi,1,2,1,2,1,1
+Ascomycota,Ophiocordyceps camponoti-rufipedis,1,1,1,2,1,1
+Ascomycota,Ophiocordyceps camponoti-saundersi,1,1,1,2,1,1
+Ascomycota,Ophiocordyceps polyrhachis-furcata,1,1,1,2,1,1
 Ascomycota,Ophiocordyceps sinensis,1,1,1,2,1,1
 Ascomycota,Ophiocordyceps unilateralis,1,1,1,2,1,1
 Ascomycota,Ophiostoma piceae,1,1,1,2,1,1
@@ -1155,12 +1130,12 @@ Ascomycota,Penicillium atrosanguineum,1,1,1,2,1,1
 Ascomycota,Penicillium bovifimosum,1,1,1,2,1,1
 Ascomycota,Penicillium brasilianum,1,1,1,2,1,1
 Ascomycota,Penicillium brevicompactum,1,1,1,2,1,1
-Ascomycota,Penicillium camemberti,0,0,0,0,0,0
+Ascomycota,Penicillium camemberti,1,1,1,2,1,1
 Ascomycota,Penicillium canariense,1,1,1,2,1,1
 Ascomycota,Penicillium cataractarum,1,1,1,2,1,1
 Ascomycota,Penicillium cf.,1,1,1,2,1,1
 Ascomycota,Penicillium chermesinum,1,1,1,2,2,1
-Ascomycota,Penicillium chrysogenum,0,0,0,0,0,0
+Ascomycota,Penicillium chrysogenum,1,1,1,2,1,1
 Ascomycota,Penicillium cinerascens,1,1,1,2,1,1
 Ascomycota,Penicillium citrinum,1,1,1,2,1,2
 Ascomycota,Penicillium concentricum,1,1,1,2,1,1
@@ -1170,7 +1145,7 @@ Ascomycota,Penicillium crustosum,1,1,1,2,1,1
 Ascomycota,Penicillium decumbens,1,1,1,2,1,1
 Ascomycota,Penicillium desertorum,1,1,1,2,1,1
 Ascomycota,Penicillium diatomitis,1,1,1,2,1,1
-Ascomycota,Penicillium digitatum,0,0,0,0,0,0
+Ascomycota,Penicillium digitatum,1,1,1,2,1,1
 Ascomycota,Penicillium egyptiacum,1,1,1,2,1,1
 Ascomycota,Penicillium expansum,1,1,1,2,1,1
 Ascomycota,Penicillium fimorum,1,1,1,2,1,1
@@ -1213,7 +1188,6 @@ Basidiomycota,Phanerochaete sordida,1,1,1,1,1,1
 Mucoromycota,Phascolomyces articulosus,1,1,1,1,1,1
 Basidiomycota,Phellinidium pouzarii,1,1,1,1,1,1
 Ascomycota,Phialemonium atrogriseum,1,1,1,2,1,1
-Ascomycota,Phialocephala scopiformis,2,1,1,2,0,1
 Ascomycota,Phialocephala subalpina,2,1,1,2,1,1
 Ascomycota,Phialophora macrospora,1,1,1,2,1,1
 Basidiomycota,Phlebia brevispora,1,1,1,1,1,1
@@ -1250,7 +1224,7 @@ Basidiomycota,Pleurotus ostreatoroseus,1,1,1,1,1,1
 Basidiomycota,Pleurotus ostreatus,1,1,1,1,1,1
 Basidiomycota,Plicaturopsis crispa,1,1,0,0,0,1
 Basidiomycota,Pluteus cervinus,1,1,1,1,1,1
-Ascomycota,Pneumocystis carinii,1,1,0,1,1,1
+Ascomycota,Pneumocystis carinii,1,1,1,1,1,1
 Ascomycota,Pneumocystis jirovecii,1,1,0,1,1,1
 Ascomycota,Pneumocystis murina,1,1,0,1,1,1
 Ascomycota,Pneumocystis oryctolagi,1,1,0,1,1,1
@@ -1262,7 +1236,7 @@ Ascomycota,Podospora aff.,1,1,1,2,1,1
 Ascomycota,Podospora anserina,1,1,1,2,1,1
 Ascomycota,Podospora appendiculata,1,1,1,2,1,1
 Ascomycota,Podospora australis,1,1,1,2,1,1
-Ascomycota,Podospora bellae mahoneyi,1,1,1,2,1,1
+Ascomycota,Podospora bellae-mahoneyi,1,1,1,2,1,1
 Ascomycota,Podospora comata,1,1,1,2,1,1
 Ascomycota,Podospora didyma,1,1,1,2,1,1
 Ascomycota,Podospora fimiseda,1,1,1,2,1,1
@@ -1274,7 +1248,7 @@ Basidiomycota,Polyporus arcularius,1,1,1,1,0,1
 Ascomycota,Polytolypa hystricis,1,1,1,2,1,2
 Basidiomycota,Postia placenta,1,1,1,1,0,1
 Chytridiomycota,Powellomyces hirtus,1,1,1,1,1,1
-Ascomycota,Protomyces lactucae debilis,1,1,1,1,0,1
+Ascomycota,Protomyces lactucae-debilis,1,1,1,1,0,1
 Ascomycota,Pseudallescheria apiosperma,1,1,1,2,1,1
 Ascomycota,Pseudocercospora eumusae,1,1,1,2,1,1
 Ascomycota,Pseudocercospora fijiensis,1,1,1,2,1,1
@@ -1309,15 +1283,15 @@ Basidiomycota,Pycnoporus cinnabarinus,1,1,1,1,1,1
 Ascomycota,Pyrenochaeta sp.,1,1,1,2,0,1
 Ascomycota,Pyrenophora seminiperda,1,1,1,2,1,1
 Ascomycota,Pyrenophora teres,1,1,1,2,1,1
-Ascomycota,Pyrenophora tritici repentis,1,1,1,2,1,1
+Ascomycota,Pyrenophora tritici-repentis,1,1,1,2,1,1
 Ascomycota,Pyricularia grisea,1,1,1,2,1,1
-Ascomycota,Pyricularia oryzae,0,0,0,0,0,0
+Ascomycota,Pyricularia oryzae,1,1,1,2,1,1
 Basidiomycota,Pyrrhoderma noxium,1,1,1,1,1,1
 Ascomycota,Rachicladosporium sp.,1,1,1,2,1,1
 Glomeromycota,Racocetra fulgida,1,1,1,2,1,1
 Glomeromycota,Racocetra persica,1,1,1,1,1,1
 Ascomycota,Ramalina farinacea,1,1,1,2,1,1
-Ascomycota,Ramularia collo cygni,1,1,1,2,1,1
+Ascomycota,Ramularia collo-cygni,1,1,1,2,1,1
 Ascomycota,Recurvomyces mirabilis,1,1,1,2,1,1
 Ascomycota,Rhexocercosporidium sp.,1,2,1,2,1,1
 Chytridiomycota,Rhizoclosmatium globosum,1,1,1,1,1,1
@@ -1349,7 +1323,7 @@ Ascomycota,Rhynchosporium secalis,1,1,1,2,1,1
 Ascomycota,Rhypophila decipiens,1,1,1,2,1,1
 Basidiomycota,Rickenella mellea,1,1,1,1,1,1
 Basidiomycota,Roridomyces roridus,1,2,1,1,1,1
-Ascomycota,Rosellinia necatrix,0,0,0,0,0,0
+Ascomycota,Rosellinia necatrix,1,2,1,2,1,1
 Rozellomycota,Rozella allomycis,1,1,1,1,1,1
 Basidiomycota,Russula earlei,1,1,1,1,1,1
 Basidiomycota,Russula ochroleuca,1,1,1,1,1,1
@@ -1366,7 +1340,6 @@ Ascomycota,Salinomyces thailandicus,1,1,1,2,1,1
 Basidiomycota,Sanghuangporus baumii,1,1,1,1,1,1
 Ascomycota,Sarea resinae,1,1,1,2,1,1
 Ascomycota,Saxophila tyrrhenica,1,1,1,2,1,1
-Ascomycota,Scedosporium apiospermum,1,1,1,2,1,1
 Ascomycota,Scheffersomyces spartinae,1,1,1,1,1,1
 Basidiomycota,Schizophyllum amplum,1,1,1,1,1,1
 Basidiomycota,Schizophyllum commune,1,1,1,1,1,1
@@ -1380,10 +1353,10 @@ Basidiomycota,Scleroderma citrinum,1,2,1,1,1,1
 Ascomycota,Sclerophora amabilis,1,1,1,2,1,1
 Ascomycota,Sclerotinia borealis,1,1,1,2,1,1
 Ascomycota,Sclerotinia nivalis,1,1,1,2,1,1
-Ascomycota,Sclerotinia sclerotiorum,0,0,0,0,0,0
+Ascomycota,Sclerotinia sclerotiorum,1,1,1,2,1,1
 Ascomycota,Sclerotinia trifoliorum,1,1,1,2,1,1
 Glomeromycota,Scutellospora calospora,1,1,1,1,1,1
-Ascomycota,Scytalidium lignicola,2,2,1,2,1,1
+Ascomycota,Scytalidium lignicola,1,2,1,2,1,1
 Ascomycota,Scytalidium sp.,1,1,1,2,0,1
 Ascomycota,Septoria linicola,1,1,1,2,1,1
 Basidiomycota,Serendipita indica,1,1,1,1,1,1
@@ -1398,7 +1371,7 @@ Mucoromycota,Smittium culicis,1,1,1,1,1,1
 Mucoromycota,Smittium megazygosporum,1,1,1,1,1,1
 Mucoromycota,Smittium mucronatum,1,1,1,1,1,1
 Mucoromycota,Smittium simulii,1,1,1,1,1,1
-Ascomycota,Sodiomyces alkalinus,0,0,0,0,0,0
+Ascomycota,Sodiomyces alkalinus,1,2,1,2,1,1
 Ascomycota,Sordaria brevicollis,1,1,1,2,1,1
 Ascomycota,Sordaria macrospora,1,1,1,2,1,1
 Ascomycota,Sordaria sp.,1,1,1,2,1,1
@@ -1417,7 +1390,6 @@ Basidiomycota,Sporisorium graminicola,1,1,1,1,1,1
 Basidiomycota,Sporisorium reilianum,1,1,1,1,1,1
 Basidiomycota,Sporisorium scitamineum,1,1,1,1,1,1
 Ascomycota,Sporothrix brasiliensis,1,1,1,2,1,1
-Ascomycota,Sporothrix insectorum,1,1,1,2,1,1
 Microsporidia,Spraguea lophii,1,1,0,1,1,1
 Ascomycota,Stachybotrys chartarum,1,1,1,2,1,1
 Ascomycota,Stachybotrys chlorohalonatus,1,1,1,2,1,1
@@ -1442,7 +1414,7 @@ Chytridiomycota,Synchytrium endobioticum,1,1,1,1,1,1
 Chytridiomycota,Synchytrium microbalum,1,1,1,1,1,1
 Ascomycota,Talaromyces amestolkiae,1,1,1,2,1,1
 Ascomycota,Talaromyces atroroseus,1,1,1,2,1,1
-Ascomycota,Talaromyces cellulolyticus,1,1,1,2,2,1
+Ascomycota,Talaromyces cellulolyticus,1,1,1,2,1,1
 Ascomycota,Talaromyces islandicus,1,1,1,2,1,1
 Ascomycota,Talaromyces pinophilus,1,1,1,2,1,1
 Ascomycota,Talaromyces proteolyticus,1,1,1,2,1,1
@@ -1475,20 +1447,18 @@ Basidiomycota,Tilletia laevis,1,1,1,1,1,1
 Basidiomycota,Tilletia walkeri,1,2,1,1,1,1
 Basidiomycota,Tilletiaria anomala,1,1,1,1,1,1
 Ascomycota,Tolypocladium capitatum,1,1,1,2,1,1
-Ascomycota,Tolypocladium ophioglossoides,0,0,0,0,0,0
+Ascomycota,Tolypocladium ophioglossoides,1,1,1,2,1,1
 Ascomycota,Tolypocladium paradoxum,1,1,1,2,1,1
 Ascomycota,Torrubiella hemipterigena,1,1,1,2,1,1
 Ascomycota,Torulaspora globosa,1,2,1,1,2,1
 Ascomycota,Tothia fuscella,1,1,1,2,1,1
 Microsporidia,Trachipleistophora hominis,0,1,0,1,1,1
-Basidiomycota,Trametes cinnabarina,1,1,1,1,1,1
 Basidiomycota,Trametes coccinea,1,1,1,1,1,1
 Basidiomycota,Trametes cubensis,1,1,1,1,1,1
 Basidiomycota,Trametes pubescens,1,1,1,1,1,1
 Basidiomycota,Trametes sanguinea,1,1,1,1,1,1
 Basidiomycota,Trametes versicolor,1,0,0,1,0,0
 Ascomycota,Trematosphaeria pertusa,1,1,1,2,0,1
-Basidiomycota,Tremellales sp.,1,1,1,1,1,1
 Ascomycota,Triangularia setosa,1,1,1,2,1,1
 Ascomycota,Triangularia verruculosa,1,1,1,2,1,1
 Ascomycota,Trichocladium antarcticum,1,1,1,2,0,1
@@ -1497,12 +1467,12 @@ Ascomycota,Trichoderma aggressivum,1,1,1,2,1,1
 Ascomycota,Trichoderma arundinaceum,1,1,1,2,1,1
 Ascomycota,Trichoderma breve,1,1,1,2,1,1
 Ascomycota,Trichoderma citrinoviride,1,1,1,2,0,1
-Ascomycota,Trichoderma cornu damae,1,1,1,2,1,1
+Ascomycota,Trichoderma cornu-damae,1,1,1,2,1,1
 Ascomycota,Trichoderma gamsii,1,1,1,2,1,1
 Ascomycota,Trichoderma guizhouense,1,1,1,2,1,1
 Ascomycota,Trichoderma lentiforme,1,1,1,2,1,1
 Ascomycota,Trichoderma parareesei,1,1,1,2,1,1
-Ascomycota,Trichoderma reesei,0,0,0,0,0,0
+Ascomycota,Trichoderma reesei,1,1,1,2,1,1
 Ascomycota,Trichoderma semiorbis,1,1,1,2,1,1
 Ascomycota,Trichoderma simmonsii,1,1,1,2,1,1
 Ascomycota,Trichoderma sp.,1,1,1,2,1,1
@@ -1516,7 +1486,7 @@ Ascomycota,Trichophyton verrucosum,1,1,1,2,1,2
 Ascomycota,Trichophyton violaceum,1,1,1,2,1,2
 Ascomycota,Trichothecium roseum,1,1,1,2,0,1
 Ascomycota,Truncatella angustata,1,1,1,2,1,1
-Ascomycota,Tuber aestivum,0,0,0,0,0,0
+Ascomycota,Tuber aestivum,1,1,1,2,1,1
 Ascomycota,Tuber borchii,1,2,1,2,1,1
 Ascomycota,Tuber magnatum,1,2,2,2,0,1
 Ascomycota,Tuber melanosporum,1,1,1,1,1,1
@@ -1524,11 +1494,11 @@ Microsporidia,Tubulinosema ratisbonensis,0,1,1,1,1,1
 Basidiomycota,Tulasnella calospora,1,1,1,1,1,1
 Basidiomycota,Tulasnella sp.,1,1,1,1,1,1
 Basidiomycota,Tulosesus angulatus,1,1,1,1,1,1
-Mucoromycota,Umbelopsis ramanniana,1,1,2,1,0,1
+Mucoromycota,Umbelopsis ramanniana,1,1,1,1,0,1
 Mucoromycota,Umbelopsis vinacea,1,1,1,1,1,1
 Ascomycota,Uncinocarpus reesii,1,1,1,2,1,1
 Ascomycota,Uncinula necator,1,1,1,2,1,1
-Ascomycota,Ustilaginoidea virens,0,0,0,0,0,0
+Ascomycota,Ustilaginoidea virens,1,2,1,2,1,1
 Basidiomycota,Ustilago bromivora,1,1,1,1,1,1
 Basidiomycota,Ustilago hordei,1,1,1,1,1,1
 Basidiomycota,Ustilago sp.,1,1,1,1,1,1
@@ -1576,7 +1546,7 @@ Ascomycota,Yarrowia sp.,1,1,1,1,1,1
 Ascomycota,Zalaria obscura,1,1,1,2,1,1
 Ascomycota,Zalerion maritima,1,1,1,2,1,1
 Mucoromycota,Zancudomyces culisetae,1,1,1,1,1,1
-Ascomycota,Zygosaccharomyces bailii,0,0,0,0,0,0
+Ascomycota,Zygosaccharomyces bailii,1,2,1,1,2,1
 Ascomycota,Zygosaccharomyces mellis,1,1,1,1,2,1
 Ascomycota,Zygosaccharomyces parabailii,1,2,1,2,2,1
 Ascomycota,Zygotorulaspora mrakii,1,2,1,1,2,1
