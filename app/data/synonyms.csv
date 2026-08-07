@@ -1,0 +1,31 @@
+alias,canonical_name,canonical_source,current_accepted_name,relationship
+Acidomyces_sp.,Acidomyces_richmondensis,UPUP,Acidomyces_richmondensis,unidentified 'sp.' resolved to the kept named species
+Arthroderma_benhamiae,Trichophyton_mentagrophytes,UPUP,Trichophyton_benhamiae,DISTINCT species (alias's accepted name is Trichophyton benhamiae); removed as identical-proteome duplicate of T. mentagrophytes
+Bipolaris_sorokiniana,Cochliobolus_sativus,UniProt,Bipolaris_sorokiniana,synonym: anamorph Bipolaris sorokiniana (accepted) = teleomorph Cochliobolus sativus
+Bipolaris_zeicola,Cochliobolus_carbonum,UniProt,Bipolaris_zeicola,synonym: anamorph Bipolaris zeicola (accepted) = teleomorph Cochliobolus carbonum
+Botryosphaeria_parva,Neofusicoccum_parvum,UniProt,Neofusicoccum_parvum,synonym: reclassified to Neofusicoccum parvum
+Botrytis_cinerea,Botryotinia_fuckeliana,UniProt,Botrytis_cinerea,synonym: anamorph Botrytis cinerea (accepted) = teleomorph Botryotinia fuckeliana
+Candida_auris,Candidozyma_auris,UniProt,Candidozyma_auris,synonym: reclassified to Candidozyma auris (2024); GBIF still lists Candida auris
+Cryptococcus_laurentii,Papiliotrema_laurentii,UniProt,Papiliotrema_laurentii,synonym: reclassified to Papiliotrema laurentii
+Dekkera_bruxellensis,Brettanomyces_bruxellensis,UniProt,Brettanomyces_bruxellensis,synonym: anamorph Brettanomyces (common use) / teleomorph Dekkera (GBIF lists Dekkera accepted)
+Emmonsia_sp._CAC-2015a,Emergomyces_africanus,UniProt,Emergomyces_africanus,synonym: unidentified Emmonsia isolate = Emergomyces africanus
+Fusarium_verticillioides,Gibberella_moniliformis,UniProt,Fusarium_verticillioides,synonym: anamorph Fusarium verticillioides (accepted) = teleomorph Gibberella moniliformis
+Gibberella_fujikuroi,Fusarium_fujikuroi,UniProt,Fusarium_fujikuroi,synonym: anamorph Fusarium fujikuroi (accepted) = teleomorph Gibberella fujikuroi
+Kluyveromyces_polysporus,Vanderwaltozyma_polyspora,GOLD,Vanderwaltozyma_polyspora,synonym: reclassified to Vanderwaltozyma polyspora
+Leucosporidium_scottii,Leucosporidium_creatinivorum,UniProt,Leucosporidium_scottii,DISTINCT species; removed as identical-proteome duplicate of L. creatinivorum
+Millerozyma farinosa CBS 7064,Millerozyma_farinosa,OrthoDB,Millerozyma_farinosa,strain duplicate (same species; alias = strain CBS 7064)
+Mycosphaerella_eumusae,Pseudocercospora_eumusae,UniProt,Pseudocercospora_eumusae,synonym: anamorph Pseudocercospora eumusae (accepted) = teleomorph Mycosphaerella eumusae
+Neosartorya_fischeri,Aspergillus_fischeri,NCBI,Aspergillus_fischeri,synonym: reclassified to Aspergillus fischeri
+Nosema_apis,Vairimorpha_apis,UniProt,Vairimorpha_apis,"synonym: reclassified to Vairimorpha apis (2020, debated); GBIF still lists Nosema apis"
+Nosema_ceranae,Vairimorpha_ceranae,UniProt,Vairimorpha_ceranae,"synonym: reclassified to Vairimorpha ceranae (2020, debated); GBIF still lists Nosema ceranae"
+Paecilomyces_lilacinus,Purpureocillium_lilacinum,UniProt,Purpureocillium_lilacinum,synonym: reclassified to Purpureocillium lilacinum
+Paraconiothyrium_sporulosum,Paraphaeosphaeria_sporulosa,UniProt,Paraphaeosphaeria_sporulosa,synonym: teleomorph Paraphaeosphaeria sporulosa (accepted) / anamorph Paraconiothyrium sporulosum
+Phialocephala_scopiformis,Mollisia_scopiformis,UniProt,Mollisia_scopiformis,synonym: teleomorph Mollisia scopiformis (accepted) / anamorph Phialocephala scopiformis
+Rhodosporidium_toruloides,Rhodotorula_toruloides,UniProt,Rhodotorula_toruloides,synonym: reclassified to Rhodotorula toruloides
+Saccharomyces_bayanus,Saccharomyces_uvarum,UniProt,Saccharomyces_uvarum,S. bayanus (hybrid/complex) largely = S. uvarum; alias dropped (no proteome found in any source)
+Saccharomyces_pastorianus,Saccharomyces_eubayanus,UniProt,Saccharomyces_pastorianus,DISTINCT: pastorianus = lager hybrid (S. cerevisiae x eubayanus); removed as identical-proteome duplicate of parent S. eubayanus
+Scedosporium_apiospermum,Pseudallescheria_apiosperma,UniProt,Scedosporium_apiospermum,synonym: anamorph Scedosporium apiospermum (common use) / teleomorph Pseudallescheria (apiospermum complex)
+Sporothrix_insectorum,Niveomyces_insectorum,UniProt,Niveomyces_insectorum,synonym: reclassified to Niveomyces insectorum (recent); GBIF still lists Sporothrix insectorum
+Trametes_cinnabarina,Pycnoporus_cinnabarinus,UniProt,Trametes_cinnabarina,synonym: Pycnoporus merged into Trametes cinnabarina (accepted)
+Tremellales_sp.,Saitozyma_sp.,UPUP,unidentified (Tremellales),"unidentified isolates, genus-level only; removed as identical-proteome duplicate"
+Trichosporon_oleaginosus,Cutaneotrichosporon_oleaginosum,UniProt,Cutaneotrichosporon_oleaginosum,synonym: reclassified to Cutaneotrichosporon oleaginosum (2015)

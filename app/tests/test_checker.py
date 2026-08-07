@@ -15,6 +15,7 @@ from core.checker import (
     FilterResult,
     filter_fungi,
     get_property_columns,
+    load_synonyms,
     normalize_species_name,
     reconcile_input_names,
     unique_contributing_properties,
@@ -80,12 +81,13 @@ def test_reconcile_uses_first_two_tokens(curated_df):
         {"Sample": ["Candida albicans strain ABC", "Aspergillus niger ATCC 16404"],
          "loc1": [100, 200]}
     )
-    out, mapping = reconcile_input_names(inp, curated_df)
+    out, mapping, merged = reconcile_input_names(inp, curated_df)
     assert out["#Datasets"].tolist() == ["Candida albicans", "Aspergillus niger"]
     assert mapping == {
         "Candida albicans": "Candida albicans strain ABC",
         "Aspergillus niger": "Aspergillus niger ATCC 16404",
     }
+    assert merged == []
 
 
 def test_reconcile_drops_numeric_rows(curated_df):
@@ -93,23 +95,102 @@ def test_reconcile_drops_numeric_rows(curated_df):
         {"#Datasets": ["Candida albicans", "42", "Aspergillus niger"],
          "loc1": [10, 20, 30]}
     )
-    out, _ = reconcile_input_names(inp, curated_df)
+    out, _, _ = reconcile_input_names(inp, curated_df)
     assert "42" not in out["#Datasets"].tolist()
     assert len(out) == 2
 
 
 def test_reconcile_does_not_match_unrelated_substrings(curated_df):
     inp = pd.DataFrame({"Sample": ["Pseudo candida foo"], "loc1": [100]})
-    out, mapping = reconcile_input_names(inp, curated_df)
+    out, mapping, _ = reconcile_input_names(inp, curated_df)
     assert out["#Datasets"].tolist() == ["Pseudo candida foo"]
     assert mapping == {}
 
 
 def test_reconcile_adds_default_location_when_only_species_column(curated_df):
     inp = pd.DataFrame({"Sample": ["Candida albicans"]})
-    out, _ = reconcile_input_names(inp, curated_df)
+    out, _, _ = reconcile_input_names(inp, curated_df)
     assert "sample_loc1" in out.columns
     assert out["sample_loc1"].iloc[0] == 100
+
+
+# ---------- synonym resolution & merging ----------
+
+def _curated_with_candidozyma() -> pd.DataFrame:
+    return pd.DataFrame(
+        [{"Phyla": "Ascomycota", "Species": "Candidozyma auris CBS 10913",
+          "Human-pathogenicity": 2}]
+    )
+
+
+def test_reconcile_resolves_synonym_alias_to_canonical():
+    syn = {"candida auris": "candidozyma auris"}
+    inp = pd.DataFrame({"Sample": ["Candida auris"], "loc1": [100]})
+    out, mapping, merged = reconcile_input_names(inp, _curated_with_candidozyma(), synonyms=syn)
+    assert out["#Datasets"].tolist() == ["Candidozyma auris CBS 10913"]
+    assert mapping == {"Candidozyma auris CBS 10913": "Candida auris"}
+    assert merged == []
+
+
+def test_reconcile_merges_two_names_for_same_organism():
+    syn = {"candida auris": "candidozyma auris"}
+    inp = pd.DataFrame(
+        {"Sample": ["Candida auris", "Candidozyma auris"], "loc1": [100, 50]}
+    )
+    out, mapping, merged = reconcile_input_names(inp, _curated_with_candidozyma(), synonyms=syn)
+    assert out["#Datasets"].tolist() == ["Candidozyma auris CBS 10913"]  # one row
+    assert out["loc1"].tolist() == [150]                                 # reads summed
+    assert len(merged) == 1
+    assert merged[0]["kind"] == "synonym"
+    assert merged[0]["organism"] == "Candidozyma auris CBS 10913"
+    assert set(merged[0]["inputs"]) == {"Candida auris", "Candidozyma auris"}
+
+
+def test_reconcile_takes_larger_for_duplicate_same_name(curated_df):
+    inp = pd.DataFrame(
+        {"Sample": ["Candida albicans", "Candida albicans"],
+         "loc1": [100, 80], "loc2": [5, 200]}
+    )
+    out, _, notices = reconcile_input_names(inp, curated_df)
+    assert out["#Datasets"].tolist() == ["Candida albicans"]  # one row
+    assert out["loc1"].tolist() == [100]                      # larger kept per location
+    assert out["loc2"].tolist() == [200]
+    assert len(notices) == 1
+    assert notices[0]["kind"] == "duplicate"
+    assert notices[0]["name"] == "Candida albicans"
+    assert notices[0]["rows"] == 2
+    assert notices[0]["reads_differed"] is True
+
+
+def test_reconcile_underscore_variant_is_same_name_duplicate(curated_df):
+    inp = pd.DataFrame(
+        {"Sample": ["Candida albicans", "Candida_albicans"], "loc1": [30, 70]}
+    )
+    out, _, notices = reconcile_input_names(inp, curated_df)
+    assert out["#Datasets"].tolist() == ["Candida albicans"]
+    assert out["loc1"].tolist() == [70]                       # larger kept
+    assert len(notices) == 1 and notices[0]["kind"] == "duplicate"
+
+
+def test_reconcile_without_synonyms_is_backward_compatible(curated_df):
+    inp = pd.DataFrame({"Sample": ["Candida auris"], "loc1": [100]})
+    out, mapping, merged = reconcile_input_names(inp, curated_df)
+    assert out["#Datasets"].tolist() == ["Candida auris"]  # not in tiny DB, unchanged
+    assert mapping == {}
+    assert merged == []
+
+
+def test_load_synonyms(tmp_path):
+    p = tmp_path / "syn.csv"
+    p.write_text(
+        "alias,canonical_name,current_accepted_name,relationship\n"
+        "Candida_auris,Candidozyma_auris,Candidozyma_auris,synonym\n"
+        "Botrytis_cinerea,Botryotinia_fuckeliana,Botrytis_cinerea,synonym\n"
+    )
+    assert load_synonyms(p) == {
+        "candida auris": "candidozyma auris",
+        "botrytis cinerea": "botryotinia fuckeliana",
+    }
 
 
 # ---------- filter_fungi ----------
