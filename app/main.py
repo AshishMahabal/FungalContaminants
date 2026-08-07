@@ -165,6 +165,13 @@ Upload limit: **10 MB**.
 
     with st.expander("⚖️  Weights", expanded=False):
         st.caption("0 = ignore property; 2 = double-weight it.")
+        # Apply any pending reset/upload *before* the sliders are created:
+        # Streamlit forbids writing a widget's own key after it is instantiated.
+        pending = st.session_state.pop("_pending_weights", None)
+        if pending is not None:
+            for prop in property_cols:
+                if prop in pending:
+                    st.session_state[f"w_{prop}"] = int(pending[prop])
         new_weights: dict[str, int] = {}
         for prop in property_cols:
             code = short_code(prop)
@@ -183,16 +190,16 @@ Upload limit: **10 MB**.
             st.caption(f"Codes: {legend}")
 
         if st.button("Restore defaults"):
-            for prop in property_cols:
-                st.session_state[f"w_{prop}"] = seed_weights[prop]
+            st.session_state["_pending_weights"] = dict(seed_weights)
             st.rerun()
 
         custom = st.file_uploader("Upload weights JSON", type="json")
-        if custom is not None:
+        if custom is not None and st.session_state.get("_weights_file_id") != custom.file_id:
+            st.session_state["_weights_file_id"] = custom.file_id
             loaded = json.load(custom)
-            for prop in property_cols:
-                if prop in loaded:
-                    st.session_state[f"w_{prop}"] = int(loaded[prop])
+            st.session_state["_pending_weights"] = {
+                prop: int(loaded[prop]) for prop in property_cols if prop in loaded
+            }
             st.rerun()
 
     st.markdown("**Thresholds**")
